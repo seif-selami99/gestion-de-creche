@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.getiondecreche">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="jeunesse de futur"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".loginparent"></activity>
+        <activity android:name=".aficheprof" />
+        <activity
+            android:name=".affichagenws"
+            android:parentActivityName=".teacher" />
+        <activity
+            android:name=".listNews"
+            android:parentActivityName=".admin" />
+        <activity
+            android:name=".listET"
+            android:parentActivityName=".teacher" />
+        <activity
+            android:name=".Listprof"
+            android:parentActivityName=".admin" />
+        <activity android:name=".emploitdetemps" />
+        <activity
+            android:name=".ParentAct"
+            android:parentActivityName=".teacher" />
+        <activity
+            android:name=".teacher"
+            android:parentActivityName=".loginTeacher" />
+        <activity
+            android:name=".loginTeacher"
+            android:parentActivityName=".firstActivity" />
+        <activity
+            android:name=".loginActivity"
+            android:parentActivityName=".firstActivity" />
+        <activity android:name=".admin" />
+        <activity
+            android:name=".creeuncompt"
+            android:parentActivityName=".loginActivity" />
+        <activity
+            android:name=".ListEleve"
+            android:parentActivityName=".admin" />
+        <activity android:name=".firstActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
